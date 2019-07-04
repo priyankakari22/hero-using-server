@@ -1,0 +1,24 @@
+ 
+
+
+<h3> My Heroes</h3>
+<ul>
+  <li *ngFor="let hero of heros"
+ 
+  (click)="onSelect(hero)">
+  {{hero.id}} {{hero.name}}
+      
+  </li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let hero of array"
+ 
+  (click)="onSelect(hero)">
+  {{hero.id}} {{hero.name}}
+      
+  </li>
+</ul>
+
+<app-hero-detail [hero]="selectedhero"></app-hero-detail>
